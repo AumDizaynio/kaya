@@ -107,6 +107,16 @@
                     background: linear-gradient(117deg, rgba(255, 255, 255, 0.00) -3.91%, rgba(255, 255, 255, 0.04) 75.27%);
                     backdrop-filter: blur(21px);
 
+                    &::placeholder {
+                        color: var(--Gray-Gray-400, #A0AEC0);
+                        font-family: Orbitron;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 140%;
+                        /* 19.6px */
+                    }
+
                 }
 
             }
@@ -123,8 +133,8 @@
                     .switch {
                         position: relative;
                         display: inline-block;
-                        width: 60px;
-                        height: 34px;
+                        width: 36px;
+                        height: 19px;
                     }
 
                     .switch input {
@@ -148,10 +158,10 @@
                     .slider:before {
                         position: absolute;
                         content: "";
-                        height: 26px;
-                        width: 26px;
-                        left: 4px;
-                        bottom: 4px;
+                        height: 16px;
+                        width: 16px;
+                        left: 5px;
+                        bottom: 1.25px;
                         background-color: white;
                         -webkit-transition: .4s;
                         transition: .4s;
@@ -166,9 +176,9 @@
                     }
 
                     input:checked+.slider:before {
-                        -webkit-transform: translateX(26px);
-                        -ms-transform: translateX(26px);
-                        transform: translateX(26px);
+                        -webkit-transform: translateX(13px);
+                        -ms-transform: translateX(13px);
+                        transform: translateX(13px);
                     }
 
                     /* Rounded sliders */
@@ -226,6 +236,7 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 140%;
+                    text-align: center;
                     /* 19.6px */
 
                     span {
@@ -243,7 +254,6 @@
     }
 
     .info {
-        width: 56%;
         padding-left: 2.18%;
 
 
@@ -270,7 +280,9 @@
         ul {
             list-style: none;
             display: flex;
-            justify-content: space-around;
+            padding-left: 13%;
+            gap: 30px;
+
 
 
             li {

@@ -1,0 +1,303 @@
+.SignIn-main {
+    display: flex;
+    height: 100vh;
+
+    .left {
+        background-image: url("../../../public/assets/main2.png");
+        background-repeat: no-repeat;
+        width: 50%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        align-items: center;
+
+        h2 {
+            color: var(--white-100, #FFF);
+            text-align: center;
+            font-family: Orbitron;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            /* 20px */
+            letter-spacing: 3.6px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Orbitron;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            /* 36px */
+            letter-spacing: 6.48px;
+
+            background: linear-gradient(95deg, #FFF 79.99%, #21242F 102.65%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+    }
+
+    .right {
+        background: linear-gradient(159deg, #0F123B 14.25%, #090D2E 56.45%, #020515 86.14%);
+        width: 50%;
+
+        .r1 {
+
+            padding-left: 11.32%;
+            padding-right: 52.65%;
+            text-align: center;
+
+
+            h2 {
+
+                color: var(--white-100, #FFF);
+                font-family: Orbitron;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 130%;
+                /* 39px */
+            }
+
+            p {
+                color: var(--Secondary-Primary-White, var(--white-100, #FFF));
+                font-family: Orbitron;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                /* 171.429% */
+            }
+        }
+
+        .r2 {
+            padding-top: 54.5px;
+            padding-left: 5.6%;
+            padding-right: 45.65%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            fill: linear-gradient(124deg, rgba(255, 255, 255, 0.00) -22.71%, rgba(255, 255, 255, 0.04) 70.04%);
+            stroke-width: 2px;
+            stroke: #FFF;
+            backdrop-filter: blur(21px);
+
+            .register {
+                color: var(--white-100, #FFF);
+                text-align: center;
+                font-family: Orbitron;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 130%;
+                padding-top: 45.5px;
+                padding-bottom: 30px;
+                /* 23.4px */
+            }
+
+            div {
+
+                display: flex;
+                gap: 15px;
+                padding-bottom: 20px;
+
+
+                .logo {
+                    width: 75px;
+                    height: 75px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    border-radius: 20px;
+                    border: 2px solid #FFF;
+                    background: linear-gradient(124deg, rgba(255, 255, 255, 0.00) -22.38%, rgba(255, 255, 255, 0.04) 70.38%);
+                    backdrop-filter: blur(21px);
+                }
+            }
+
+            .or {
+                color: var(--Gray-Gray-400, #A0AEC0);
+                text-align: center;
+                font-family: Orbitron;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%;
+                /* 25.2px */
+            }
+
+            .form {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    color: var(--white-100, #FFF);
+                    font-family: Orbitron;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+                    /* 19.6px */
+                }
+
+                input {
+                    display: flex;
+                    width: 350px;
+                    height: 50px;
+                    padding: 0px var(--20, 20px);
+                    align-items: center;
+                    flex-shrink: 0;
+
+                    border-radius: 20px;
+                    border: 2px solid #FFF;
+                    background: linear-gradient(124deg, rgba(255, 255, 255, 0.00) -22.38%, rgba(255, 255, 255, 0.04) 70.38%);
+                    backdrop-filter: blur(21px);
+
+                    color: var(--Gray-Gray-400, #A0AEC0);
+                    font-family: Orbitron;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+                    /* 19.6px */
+                }
+
+            }
+
+            .RememberMe {
+
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                width: 100%;
+
+                .rm {
+
+                    .switch {
+                        position: relative;
+                        display: inline-block;
+                        width: 36px;
+                        height: 19px;
+                    }
+
+                    .switch input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+                    }
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 16px;
+                        width: 16px;
+                        left: 5px;
+                        bottom: 1.25px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    input:checked+.slider {
+                        background-color: #2196F3;
+                    }
+
+                    input:focus+.slider {
+                        box-shadow: 0 0 1px #2196F3;
+                    }
+
+                    input:checked+.slider:before {
+                        -webkit-transform: translateX(13px);
+                        -ms-transform: translateX(13px);
+                        transform: translateX(13px);
+                    }
+
+                    /* Rounded sliders */
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+
+                    .slider.round:before {
+                        border-radius: 50%;
+                    }
+                }
+
+
+                .RM {
+                    color: var(--white-100, #FFF);
+                    font-family: Orbitron;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    /* 18px */
+                }
+            }
+        }
+    }
+
+    .info {
+        padding-left: 2.18%;
+
+
+
+        p {
+            color: #A0AEC0;
+            font-family: Orbitron;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+
+            span {
+
+                color: #A0AEC0;
+                font-family: Orbitron;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+            }
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding-left: 13%;
+            gap: 30px;
+
+
+
+            li {
+                color: #A0AEC0;
+                font-family: Orbitron;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                /* 21px */
+            }
+        }
+    }
+
+}
