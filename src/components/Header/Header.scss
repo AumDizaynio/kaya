@@ -1,0 +1,83 @@
+.header-main {
+    padding-left: 24.27%;
+    padding-right: 24.28%;
+
+    .header {
+
+        display: flex;
+        height: 70px;
+        align-items: center;
+        width: 100%;
+
+        justify-content: space-between;
+
+        border-radius: 20px;
+        border: 2px solid #FFF;
+        background: linear-gradient(124deg, rgba(255, 255, 255, 0.00) -22.38%, rgba(255, 255, 255, 0.04) 70.38%);
+        backdrop-filter: blur(21px);
+        background-color: red;
+
+        padding-left: 23px;
+        padding-right: 24px;
+
+        h3 {
+            font-family: Orbitron;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+            /* 14px */
+            letter-spacing: 2.52px;
+            background: linear-gradient(98deg, #FFF 70.67%, rgba(117, 122, 140, 0.00) 108.55%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+
+        }
+
+        .header-list {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                color: var(--white-100, #FFF);
+                text-align: center;
+                font-family: Orbitron;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+
+                /* 15px */
+            }
+        }
+
+        button {
+            display: flex;
+            width: 150px;
+            height: 34.969px;
+            padding: 0px 8px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+
+            border-radius: var(--12, 12px);
+            background: #0075FF;
+            backdrop-filter: blur(60px);
+
+            color: var(--white-100, #FFF);
+            text-align: center;
+            font-family: Orbitron;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            /* 15px */
+        }
+    }
+}
