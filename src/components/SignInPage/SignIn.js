@@ -22,21 +22,31 @@ const SignIn = () => {
                     </div>
 
                     <div className="RememberMe">
-                        <div className="radio">
-                            <div className="back">
-                                <div className="in">
-
-                                </div>
-                            </div>
+                        <div className="rm">
+                            <label class="switch">
+                                <input type="checkbox" checked />
+                                <span class="slider round"></span>
+                            </label>
                         </div>
                         <p>Remeber Me</p>
                     </div>
-                    <button>
-                        SIGN IN
-                    </button>
-                    <p>Don't have an account? <span>Sign up</span></p>
+                    <div className="header-last-div">
+                        <button>
+                            SIGN IN
+                        </button>
+                        <p>Don't have an account? <span>Sign up</span></p>
+                    </div>
+                </div>
+                <div className="info">
+                    <p>@ 2021, Made with ❤️ by <span>Simmmple & Creative Tim for a better web</span> </p>
+                    <ul>
+                        <li>Marketplace</li>
+                        <li>Blog</li>
+                        <li>License</li>
+                    </ul>
                 </div>
             </div>
+
         </div>
     );
 };

@@ -1,13 +1,17 @@
 .header-main {
     padding-left: 24.27%;
     padding-right: 24.28%;
+    
 
     .header {
 
         display: flex;
         height: 70px;
+        width: 51.40%;
         align-items: center;
-        width: 100%;
+        position: absolute;
+        top: 24px;
+        
 
         justify-content: space-between;
 
@@ -15,8 +19,6 @@
         border: 2px solid #FFF;
         background: linear-gradient(124deg, rgba(255, 255, 255, 0.00) -22.38%, rgba(255, 255, 255, 0.04) 70.38%);
         backdrop-filter: blur(21px);
-        background-color: red;
-
         padding-left: 23px;
         padding-right: 24px;
 
