@@ -1,7 +1,50 @@
 import React from "react";
 import "./SignInPage.scss";
+import Checkbox from "../Checkbox/Checkbox";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SignInPage = () => {
+  const [signinData, setSigninData] = useState({
+    emailsignin: "",
+    passwordsignin: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handlechange1 = (e) => {
+    const name1 = e.target.name;
+    const value1 = e.target.value;
+    setSigninData((last) => {
+      return { ...last, [name1]: value1 };
+    });
+  };
+
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    setErrors(Validation(signinData));
+  };
+
+  const Validation = (signinData) => {
+    const errors = {};
+    const regexemail = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    const regexpassword = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+
+    if (signinData.emailsignin === "") {
+      errors.emailsignin = "email is Required !";
+    } else if (!regexemail.test(signinData.emailsignin)) {
+      errors.emailsignin = "email is not valid !";
+    }
+
+    if (signinData.passwordsignin === "") {
+      errors.passwordsignin = "password is Required !";
+    } else if (!regexpassword.test(signinData.passwordsignin)) {
+      errors.passwordsignin = "password is not valid !";
+    }
+
+    return errors;
+  };
+
   return (
     <div className="SignIn-main">
       <div className="left">
@@ -12,30 +55,53 @@ const SignInPage = () => {
         <div className="r-top">
           <h2>Nice to see you!</h2>
           <h3>Enter your email and password to sign in</h3>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input type="text" placeholder="Your email address" />
-          </div>
-          <div>
-            <label htmlFor="password">Password</label>
-            <input type="text" placeholder="Your password" />
-          </div>
-
-          <div className="RememberMe">
-            <div className="rm">
-              <label class="switch">
-                <input type="checkbox" checked />
-                <span class="slider round"></span>
+          <form onSubmit={handleSignIn}>
+            <div>
+              <label className="emaillabel" htmlFor="email">
+                Email
               </label>
+              <input
+                name="emailsignin"
+                className="email"
+                type="text"
+                placeholder="Your email address"
+                onChange={handlechange1}
+              />
+              {errors.emailsignin && (
+                <p style={{ color: "red" }}>{errors.emailsignin}</p>
+              )}
             </div>
-            <p>Remeber Me</p>
-          </div>
-          <div className="header-last-div">
-            <button>SIGN IN</button>
-            <p>
-              Don't have an account? <span>Sign up</span>
-            </p>
-          </div>
+            <div>
+              <label className="passwordlabel" htmlFor="password">
+                Password
+              </label>
+              <input
+                name="passwordsignin"
+                className="password"
+                type="password"
+                placeholder="Your password"
+                onChange={handlechange1}
+              />
+              {errors.passwordsignin && (
+                <p style={{ color: "red" }}>{errors.passwordsignin}</p>
+              )}
+            </div>
+
+            <div className="RememberMe">
+              <Checkbox />
+              <p>Remeber Me</p>
+            </div>
+            <div className="header-last-div">
+              <button type="submit">SIGN IN</button>
+              <p>
+                Don't have an account?
+                <span>
+                  {" "}
+                  <Link to={"/Signup"}>Sign up</Link>
+                </span>
+              </p>
+            </div>
+          </form>
         </div>
         <div className="info">
           <p>

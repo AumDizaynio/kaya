@@ -1,0 +1,38 @@
+div {
+    .container {
+        display: flex;
+
+        input {
+            display: none;
+        }
+
+        .button {
+            background-color: gray;
+            width: 36px;
+            height: 18px;
+            border-radius: 200px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .button::before {
+            position: absolute;
+            content: '';
+            background-color: white;
+            width: 13.5px;
+            height: 13.5px;
+            margin: 2.5px;
+            border-radius: 50%;
+
+        }
+
+        #check:checked+.button {
+            background: #0075FF;
+        }
+
+        #check:checked+.button::before {
+            background: white;
+            transform: translateX(18px);
+        }
+    }
+}
