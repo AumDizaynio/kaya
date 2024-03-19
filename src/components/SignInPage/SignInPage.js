@@ -114,6 +114,7 @@ const SignInPage = () => {
             <li>License</li>
           </ul>
         </div>
+      <button className="download">Download</button>
       </div>
     </div>
   );

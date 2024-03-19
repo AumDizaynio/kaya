@@ -14,22 +14,19 @@ const SignUpPage = () => {
   const [errors, setErrors] = useState({});
 
   const handlechange = (e) => {
-
     const name = e.target.name;
     const value = e.target.value;
     console.log(name, value, "hgggdfdfdf");
     setDetails((prev) => {
       return { ...prev, [name]: value };
     });
-
-
   };
-  console.log(details, "deta")
+  console.log(details, "deta");
 
   const handlesubmit = (e) => {
     e.preventDefault();
-    setErrors(Validation(details))
-    console.log(details)
+    setErrors(Validation(details));
+    console.log(details);
   };
 
   const Validation = (signinData) => {
@@ -38,7 +35,7 @@ const SignUpPage = () => {
     const regexpassword = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
 
     if (details.name === "") {
-      errors.name = "name is not valid"
+      errors.name = "name is not valid";
     }
 
     if (details.email === "") {
@@ -129,7 +126,9 @@ const SignUpPage = () => {
                   placeholder="Your password"
                   onChange={handlechange}
                 />
-                {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
+                {errors.password && (
+                  <p style={{ color: "red" }}>{errors.password}</p>
+                )}
               </div>
               <div className="RememberMe">
                 <Checkbox />
@@ -138,7 +137,10 @@ const SignUpPage = () => {
               <div className="last-div">
                 <button type="submit">SIGN UP</button>
                 <p>
-                  Already have an account? <span><Link to={"/"}>Sign in</Link></span>
+                  Already have an account?{" "}
+                  <span>
+                    <Link to={"/"}>Sign in</Link>
+                  </span>
                 </p>
               </div>
             </form>
@@ -155,6 +157,7 @@ const SignUpPage = () => {
             <li>License</li>
           </ul>
         </div>
+        <button className="download">Download</button>
       </div>
     </div>
   );
