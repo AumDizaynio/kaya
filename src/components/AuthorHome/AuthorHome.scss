@@ -1,0 +1,128 @@
+.authorhome {
+    height: 62px;
+
+    .blank {
+        width: 100%;
+        flex-shrink: 0;
+        height: 1px;
+        background-color: #56577A;
+        margin-bottom: 4.5px;
+    }
+
+    .main {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 80px;
+        align-items: center;
+
+        .ah-left {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 45px;
+                height: 45px;
+                object-fit: cover;
+                margin: 5px;
+            }
+
+            .info {
+                .p1 {
+                    color: var(--white-100, #FFF);
+                    font-family: Orbitron;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+                    /* 19.6px */
+                }
+
+                .p2 {
+                    color: var(--Gray-Gray-400, #A0AEC0);
+                    font-family: Orbitron;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    /* 21px */
+                }
+            }
+
+        }
+
+        .ah-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+
+            .r1 {
+                min-width: 98px;
+
+                .p3 {
+                    color: var(--white-100, #FFF);
+                    font-family: Orbitron;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+                    /* 19.6px */
+                }
+
+                .p4 {
+                    color: var(--Gray-Gray-400, #A0AEC0);
+                    font-family: Orbitron;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    /* 21px */
+                }
+            }
+
+            .p5 {
+                width: 65px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: var(--8, 8px);
+                background: var(--primary-green-500-success-color, #01B574);
+
+                color: var(--black-amp-white-white, var(--white-100, #FFF));
+                text-align: center;
+                font-family: Orbitron;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                /* 19.6px */
+            }
+
+            .p6 {
+                color: var(--white-100, #FFF);
+                font-family: Orbitron;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                /* 19.6px */
+            }
+
+            .p7 {
+                color: var(--Gray-Gray-400, #A0AEC0);
+                font-family: Orbitron;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+                /* 21px */
+            }
+
+
+        }
+    }
+}

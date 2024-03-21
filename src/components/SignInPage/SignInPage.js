@@ -97,7 +97,7 @@ const SignInPage = () => {
                 Don't have an account?
                 <span>
                   {" "}
-                  <Link to={"/Signup"}>Sign up</Link>
+
                 </span>
               </p>
             </div>
@@ -114,7 +114,7 @@ const SignInPage = () => {
             <li>License</li>
           </ul>
         </div>
-      <button className="download">Download</button>
+        <button className="download">Download</button>
       </div>
     </div>
   );

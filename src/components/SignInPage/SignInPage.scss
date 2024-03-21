@@ -2,7 +2,7 @@
     display: flex;
 
     .left {
-        background-image: url("../../../public/assets/main.png");
+        background-image: url("../../assets/main.png");
         background-repeat: no-repeat;
         width: 50%;
         background-size: cover;
@@ -190,6 +190,7 @@
                     /* 19.6px */
 
                     span {
+
                         a {
 
                             all: unset;
@@ -201,6 +202,7 @@
                             font-style: normal;
                             font-weight: 700;
                             line-height: 140%;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -281,7 +283,7 @@
         height: auto;
 
         .left {
-            background-image: url("../../../public/assets/main.png");
+            background-image: url("../../assets/main.png");
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
@@ -568,7 +570,7 @@
         height: auto;
 
         .left {
-            background-image: url("../../../public/assets/main.png");
+            background-image: url("../../assets/main.png");
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
