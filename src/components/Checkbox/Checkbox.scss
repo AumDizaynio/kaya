@@ -23,16 +23,19 @@ div {
             height: 13.5px;
             margin: 2.5px;
             border-radius: 50%;
+            transition: 0.5s;
 
         }
 
         #check:checked+.button {
             background: #0075FF;
+            
         }
 
         #check:checked+.button::before {
             background: white;
             transform: translateX(18px);
+            transition: transform 0.5s;
         }
     }
 }

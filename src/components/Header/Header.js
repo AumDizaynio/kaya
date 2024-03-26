@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.scss";
 import { Burger, Cross, Dashboard, Profile, SignIn, SignUp } from "../../icons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [burger, setBurger] = useState(false);
@@ -15,23 +16,31 @@ const Header = () => {
         <h3>VISION UI FREE</h3>
         <ul className="header-list">
           <li className="list-items">
-            <Dashboard />
-            <p>DASHBOARD</p>
+            <Link className="linktag" to={"/dashboard"}>
+              <Dashboard />
+              <p>DASHBOARD</p>
+            </Link>
           </li>
           <li className="list-items">
-            <Profile />
-            <p>PROFILE</p>
+            <Link className="linktag" to={"/profile"}>
+              <Profile />
+              <p>PROFILE</p>
+            </Link>
           </li>
           <li className="list-items">
-            <SignUp />
-            <p>SIGN UP</p>
+            <Link className="linktag" to={"/signup"}>
+              <SignUp />
+              <p>SIGN UP</p>
+            </Link>
           </li>
           <li className="list-items">
-            <SignIn />
-            <p>SIGN IN</p>
+            <Link className="linktag" to={"/"}>
+              <SignIn />
+              <p>SIGN IN</p>
+            </Link>
           </li>
         </ul>
-        <button>Free Download</button>
+        <button className="freedownload">Free Download</button>
         <div className="burger" onClick={handleBurger}>
           {!burger ? <Burger /> : <Cross />}
         </div>

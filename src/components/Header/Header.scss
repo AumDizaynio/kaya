@@ -15,7 +15,7 @@
         top: 24px;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 1;
+        z-index: 10;
 
 
         justify-content: space-between;
@@ -49,22 +49,28 @@
             gap: 20px;
 
             li {
-                display: flex;
-                align-items: center;
 
-                color: var(--white-100, #FFF);
-                text-align: center;
-                font-family: Orbitron;
-                font-size: 10px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 150%;
+                cursor: pointer;
+                .linktag {
+                    all: unset;
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
 
-                /* 15px */
+                    color: var(--white-100, #FFF);
+                    text-align: center;
+                    font-family: Orbitron;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
+
+                    /* 15px */
+                }
             }
         }
 
-        button {
+        .freedownload {
             display: flex;
             width: 150px;
             height: 34.969px;
@@ -72,6 +78,7 @@
             justify-content: center;
             align-items: center;
             flex-shrink: 0;
+            border: none;
 
             border-radius: var(--12, 12px);
             background: #0075FF;
@@ -85,6 +92,12 @@
             font-weight: 700;
             line-height: 150%;
             /* 15px */
+
+            &:hover {
+                border: 1px solid white;
+                cursor: pointer;
+            }
+
         }
 
         .burger {
@@ -170,7 +183,7 @@
                 }
             }
 
-            button {
+            .freedownload {
                 display: flex;
                 width: 150px;
                 height: 34.969px;
@@ -278,7 +291,7 @@
                 }
             }
 
-            button {
+            .freedownload {
                 display: none;
                 width: 150px;
                 height: 34.969px;
@@ -286,6 +299,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-shrink: 0;
+                border: none;
 
                 border-radius: var(--12, 12px);
                 background: #0075FF;
@@ -299,6 +313,12 @@
                 font-weight: 700;
                 line-height: 150%;
                 /* 15px */
+
+                &:hover {
+                    border: 1px solid #FFF;
+                    cursor: pointer;
+                }
+
             }
 
             .burger {
@@ -349,7 +369,7 @@
                 }
             }
 
-            .download{
+            .download {
                 display: flex;
                 position: absolute;
                 height: 20px;

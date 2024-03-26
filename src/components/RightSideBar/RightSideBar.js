@@ -5,7 +5,10 @@ import AuthorHome from "../AuthorHome/AuthorHome";
 import ProjectHome from "../ProjectHome/ProjectHome";
 
 function RightSideBar() {
+
+
   return (
+
     <div className="rightsidebar">
       <div className="navbar">
         <div className="nav-l">
@@ -44,7 +47,7 @@ function RightSideBar() {
             <p className="p1">FUNCTION</p>
             <p className="p2">STATUS</p>
             <p className="p3">EMPLOYED</p>
-            <p className="p4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p className="p4"></p>
           </div>
         </div>
         <AuthorHome />
@@ -63,9 +66,9 @@ function RightSideBar() {
           </div>
           <div className="main-2-right">
             <p className="p1">FUNCTION</p>
-            <p className="p2">STATUS&nbsp;&nbsp;&nbsp;</p>
-            <p className="p3">&nbsp;&nbsp;COMPLETION</p>
-            <p className="p4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p className="p2">STATUS</p>
+            <p className="p3">COMPLETION</p>
+            <p className="p4"></p>
           </div>
         </div>
         <ProjectHome />

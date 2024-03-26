@@ -158,6 +158,7 @@
                         font-weight: 500;
                         line-height: 140%;
                         /* 19.6px */
+                        margin-bottom: 5px;;
                     }
 
                     .email,
@@ -220,7 +221,8 @@
                 padding: 0px 8px;
                 justify-content: center;
                 align-items: center;
-                flex-shrink: 0;
+                border: none;
+
 
                 border-radius: var(--12, 12px);
                 background: #0075FF;
@@ -235,6 +237,10 @@
                 line-height: 150%;
 
                 /* 15px */
+                &:hover{
+                    border: 1px solid #FFF;
+                    cursor: pointer;
+                }
             }
 
             p {

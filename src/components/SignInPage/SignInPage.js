@@ -96,8 +96,7 @@ const SignInPage = () => {
               <p>
                 Don't have an account?
                 <span>
-                  {" "}
-
+                  {" "}<Link to={"/signup"}>Sign Up</Link>
                 </span>
               </p>
             </div>

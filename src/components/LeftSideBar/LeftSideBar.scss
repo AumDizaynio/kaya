@@ -34,9 +34,6 @@
             height: 0px;
             flex-shrink: 0;
 
-            stroke-width: 1px;
-            stroke: rgba(224, 225, 226, 0.00);
-
             margin-inline: auto;
             margin-bottom: 42.5px;
         }
@@ -74,7 +71,7 @@
                 }
 
                 p {
-                    color: var(--white-100, #FFF);
+                    color: #FFF;
                     font-family: Orbitron;
                     font-size: 14px;
                     font-style: normal;

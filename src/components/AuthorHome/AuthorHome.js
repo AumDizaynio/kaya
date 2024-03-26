@@ -4,21 +4,21 @@ import Dp from "../../assets/Dp.png";
 
 const AuthorHome = () => {
   const Author = [
-    { name: "Esthera Jackson", mail: "esthera@simmmple.com", role1: "Manager" , role2:"Organization" , status : "Online"},
-    { name: "Alexa Liras", mail: "Laurent Michael", role1: "Programmer" , role2:"Developer" , status : "Offline"},
-    { name: "Laurent Michael", mail: "laurent@simmmple.com", role1: "Executive" , role2:"Projects" , status : "Online"},
-    { name: "Freduardo Hill", mail: "freduardo@simmmple.com", role1: "Manager" , role2:"Organization" , status : "Online"},
-    { name: "Daniel Thomas", mail: "daniel@simmmple.com", role1: "Programmer" , role2:"Developer" , status : "Offline"},
-    { name: "Mark Wilson", mail: "mark@simmmple.com", role1: "Designer" , role2:"UI/UX Design" , status : "Offline"},
+    { name: "Esthera Jackson", mail: "esthera@simmmple.com", role1: "Manager", role2: "Organization", status: "Online" },
+    { name: "Alexa Liras", mail: "Laurent Michael", role1: "Programmer", role2: "Developer", status: "Offline" },
+    { name: "Laurent Michael", mail: "laurent@simmmple.com", role1: "Executive", role2: "Projects", status: "Online" },
+    { name: "Freduardo Hill", mail: "freduardo@simmmple.com", role1: "Manager", role2: "Organization", status: "Online" },
+    { name: "Daniel Thomas", mail: "daniel@simmmple.com", role1: "Programmer", role2: "Developer", status: "Offline" },
+    { name: "Mark Wilson", mail: "mark@simmmple.com", role1: "Designer", role2: "UI/UX Design", status: "Offline" },
   ];
 
   return (
-    Author.map((arr)=>{
-        return <div className="authorhome">
+    Author.map((arr) => {
+      return <div className="authorhome">
         <div className="blank"></div>
         <div className="main">
           <div className="ah-left">
-            <img src={Dp} alt="" srcset="" />
+            <img src={Dp} alt="" />
             <div className="info">
               <p className="p1">{arr.name}</p>
               <p className="p2">{arr.mail}</p>
